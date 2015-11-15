@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="Solar Strike">
+	<head>
+		<link href="style.css" type="text/css" rel="stylesheet"></link>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:800italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<title>Solar Strike</title>
+	</head>
+	<body ng-controller="rootCtrl">
+        <!-- Preload Images -->
+        <img hidden src='images/mySpaceship.png'>
+        <img hidden src='images/enemySpaceship.png'>
+        <img hidden src="images/userLaser.png">
+        <img hidden src="images/enemyLaser.png">
+        <img hidden src='images/TestBlock.png'>
+        <img hidden src='images/coin.png'>
+        <img hidden src='images/explosion1.png'>
+        <img hidden src='images/spaceship_booster.png'>
+        <img hidden src='images/hitRing.png'>
+        <img hidden src='images/coin_star.png'>
+        <img hidden src='images/smoke.png'>
+        <img hidden src='images/collisionHalo.png'>
+        <img hidden src='images/health_pack.png'>
+        
+        <!-- Preload Audio -->
+        <audio id="homeMusic" src="music/incompetech/ExitthePremises.mp3" loop=true></audio>
+        <audio id="gameMusic" src="music/incompetech/UrbanGauntlet.mp3" loop=true></audio>
+        <audio id="highScoreMusic" src="music/incompetech/Intrepid.mp3" loop=true></audio>
+        
+        <app-header-dir root-state-change="rootChange" get-root-state="getRootState()" send-state="updateRootState(state)" current-high-score="rootHighScore"></app-header-dir>        
+        <ng-view></ng-view>
+        <dialog-box-dir msg="'Are you sure you want to quit?'" root-state-change="rootChange" get-root-state="getRootState()" send-state="updateRootState(state)"></dialog-box-dir>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.js"></script>
+		<script src="https://cdn.firebase.com/js/client/2.2.9/firebase.js"></script>
+		<script src="https://cdn.firebase.com/libs/angularfire/1.1.2/angularfire.min.js"></script>
+		
+		<script src="src/app.js"></script>
+        <script src="src/rootCtrl.js"></script>
+		<script src="src/home/homeCtrl.js"></script>
+		<script src="src/game/gameCtrl.js"></script>
+		<script src="src/game/drawService.js"></script>
+        <script src="src/game/utilityService.js"></script>
+        <script src="src/game/objectService.js"></script>
+        <script src="src/game/collisionService.js"></script>
+        <script src="src/game/gameService.js"></script>
+        <script src="src/game/audioService.js"></script>
+        <script src="src/highScore/highScoreCtrl.js"></script>
+        <script src="src/highScore/highScoreService.js"></script>
+        <script src="directives/appHeader/appHeaderDir.js"></script>
+        <script src="directives/dialogBox/dialogBoxDir.js"></script>
+        
+	</body>
+</html>

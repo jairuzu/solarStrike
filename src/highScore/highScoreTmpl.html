@@ -1,0 +1,41 @@
+<div class="highScoreBody">
+    <p id="uScore" ng-if="userStats.score !== -1">Your Score: {{ userStats.score }}</p>
+    <h1>Top 10</h1>
+    <div class="scoreHeader">
+        <p>Name</p>
+        <p>Score</p>
+        <p>Level</p>
+    </div>
+    <li ng-repeat="scores in topScores | orderBy: sortBy | limitTo: 10 " class="scoreLine">
+        <div>
+            <p>{{scores.user}}</p>
+            <p>{{scores.score}}</p>
+            <p>{{scores.level}}</p>
+        </div>
+    </li>
+    <div class="credits">
+        <h2>Credits:</h2>
+        <h3>Background Music</h3>
+        <div class="music-credit">
+            <p>"Exit the Premises" Kevin MacLeod (incompetech.com)</p>
+            <p>Licensed under Creative Commons: By Attribution 3.0</p>
+            <p>http://creativecommons.org/licenses/by/3.0/</p>
+        </div>
+        <div class="music-credit">
+            <p>"Intrepid" Kevin MacLeod (incompetech.com)</p>
+            <p>Licensed under Creative Commons: By Attribution 3.0</p>
+            <p>http://creativecommons.org/licenses/by/3.0/</p>
+        </div>
+        <div class="music-credit">
+            <p>"Urban Gauntlet" Kevin MacLeod (incompetech.com)</p>
+            <p>Licensed under Creative Commons: By Attribution 3.0</p>
+            <p>http://creativecommons.org/licenses/by/3.0/</p>
+        </div>
+        <h3>Game Sound Effects</h3>
+        <div class="music-credit">
+            <p>http://www.freesfx.co.uk</p>
+        </div>
+    </div>
+</div>
+<div class="copyright">Solar Strike created by David Giles - Copyright 2015</div>
+

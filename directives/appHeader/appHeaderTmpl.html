@@ -1,0 +1,11 @@
+<div class="main-header">
+    <div id="homeBtn" class="btn" ng-click="homeClick()" ng-show="homeState">Home</div>
+    <div id="playBtn" class="btn" ng-click="playClick()" ng-show="playState">Play</div>
+    <div id="pauseBtn" class="btn" ng-click="pauseClick()" ng-show="pauseState">Pause</div>
+    <div id="resumeBtn" class="btn" ng-click="resumeClick()" ng-show="resumeState">Resume</div>
+    <div id="quitBtn" class="btn" ng-click="quitClick()" ng-show="quitState">Quit</div>
+    <div id="highScoresBtn" class="btn" ng-click="highScoresClick()" ng-show="highScoresState">High Scores</div>
+    <p id="highScoreDataLine">High Score: {{ currentHighScore.score }} ({{currentHighScore.user}})</p>
+    <div id="musicBtn" class="btn" ng-click="musicClick()"> {{musicText}}</div>
+    <div id="sfxBtn" class="btn" ng-click="sfxClick()">{{sfxText}}</div>
+</div>

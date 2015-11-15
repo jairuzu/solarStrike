@@ -1,0 +1,300 @@
+body, p, h1, ol, li {
+	margin: 0;
+	padding: 0;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    font-style: italic;
+}
+
+html {
+    background-color: #1a1a1a;
+}
+
+body {
+	max-width: 1280px;
+    margin: 0 auto
+}
+
+h1 {
+	text-align: center;
+}
+
+.homeBody {
+    width: 100%;
+    height: 600px;
+    background-image: url('images/Pixabay/all-757448_1280.jpg');
+    padding-top: 40px;
+}
+
+.capture p {
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+.tagLine p {
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.gamePlay {
+    width: 600px;
+    margin: 80px auto;
+    padding: 20px 0;
+    font-size: 25px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.72);
+    background-color: rgba(0, 0, 0, 0.45);
+/*    box-shadow: 10px 10px 20px black;*/
+}
+
+#title {
+    font-size: 25px;
+    text-decoration: underline;
+    color: rgba(0, 186, 255, 0.75);
+}
+
+.motto p {
+    margin: 80px auto;
+    font-size: 50px;
+    text-align: center;
+}
+
+.gameBody {
+    position: relative;
+    width: 100%;
+    /*    height: 560px;*/
+    background-image: url('images/Pixabay/space-909717_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /padding-top: 20px; 
+}
+
+.gameheader {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(0, 186, 255);
+}
+
+.gameheader > p {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.game-container {
+    position: relative;
+    width: 1200px;
+    height: 540px;
+/*    outline: 1px solid black;*/
+    margin: 0 auto;
+}
+
+.background-container {
+    position: absolute;
+    width: 1200px;
+    height: 540px;
+    background: url('images/planet_background.png');
+    opacity: .8;
+}
+
+.text-container {
+    position: absolute;
+    display: table;
+/*    height: 540px;*/
+}
+
+#textOverlay {
+    position: relative;
+    width: 1200px;
+    display: table-cell;
+/*    line-height: 540px;*/
+    height: 540px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 100px;
+    color: rgba(217, 217, 217, .1);
+}
+
+.alert_yellow {
+    color: rgba(255, 255, 0, 0.15);
+}
+
+.alert_red {
+    color: rgba(255, 0, 0, 0.2);
+}
+
+.canvas-container {
+    position: absolute;
+    width: 1200px;
+    height: 540px;
+/*    outline: 1px solid black;*/
+    margin: 0 auto;
+
+}
+
+#gameScreen {
+	width: 1200px;
+/*	height: 600px;*/
+	margin: 0 auto;
+}
+
+app-header-dir {
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    background-color: #1a1a1a;
+}
+
+app-header-dir #highScoreDataLine {
+    display: inline-block;
+    color: #a3a2a2;
+    float: right;
+    line-height: 100px;
+    margin-right: 20px;
+}
+
+#musicBtn {
+    float: right;
+}
+
+#sfxBtn {
+    float: right;
+}
+
+.btn {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin: 0 auto;
+    color: #a3a2a2;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid #a3a2a2;
+    margin: 25px 10px;
+}
+
+.btn:hover {
+    color: #00e2ff;
+    background-color: rgba(46, 46, 46, 0.48);
+}
+
+app-header-dir > .main-header {
+    width: inherit;
+    height: inherit;
+    background: url('images/SolarStrike.png');
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+dialog-box-dir {
+    position: absolute;
+    z-index: 1000;
+}
+
+dialog-box-dir .modal-container {
+    display: table;
+    z-index: 1000;
+    width: 400px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 30px black;
+}
+
+dialog-box-dir #modalMsg {
+    display: table-cell;
+    width: 400px;
+    height: 120px;
+    vertical-align: middle;
+    text-align: center;
+    color: #a3a2a2;
+}
+
+dialog-box-dir #btnContainer {
+    width: 300px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+dialog-box-dir #modal-yes {
+    float: left;
+}
+
+dialog-box-dir #modal-no {
+    float: right;
+}
+
+.highScoreBody {
+    position: relative;
+    width: 100%;
+    height: 470px;
+    background-image: url('images/Pixabay/all-703517_1280.jpg');
+    background-repeat: no-repeat;
+    padding-top: 20px;
+}
+
+.highScoreBody p, h1 {
+    color: rgb(255, 255, 255);
+}
+
+.scoreHeader {
+    width: 600px;
+    line-height: 40px;
+    margin: 0px auto;
+}
+
+.scoreHeader p {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+}
+
+.scoreLine {
+    width: 600px;
+    line-height: 20px;
+    margin: 10px auto;
+    list-style: none;
+}
+
+.scoreLine p {
+    display: inline-block;
+/*    float: left;*/
+    width: 32%;
+    text-align: center;
+}
+
+#uScore {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(0, 186, 255);
+    font-size: 30px
+}
+
+.credits {
+    position: absolute;
+    color: #a3a2a2;
+    font-size: 11px;
+    top: 100px;
+    right: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.music-credit {
+    margin: 10px;
+}
+
+.music-credit p {
+    color: #a3a2a2;
+}
+
+.copyright {
+    width: 500px;
+    color: #434343;
+    text-align: center;
+    margin: 20px auto;
+}

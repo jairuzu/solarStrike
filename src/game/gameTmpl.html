@@ -1,0 +1,21 @@
+<div class="gameBody">
+    <div class="gameheader">
+        <p>Time: {{ time | number: 1 }} sec</p>
+        <p>Health: {{ health | number: 0 }}%</p>
+        <p>Score: {{ score | number: 0 }}</p>
+        <p>Enemy Count: {{ enemyCount }}</p>
+    </div>
+    <div class="game-container">
+        <div class="background-container"></div>
+        <div class='text-container'>
+            <div id="textOverlay">
+                <p>Level {{ level }}</p>
+                <p ng-class="alert"> {{ health | number: 0 }}% </p>
+            </div>
+        </div>
+        <div class="canvas-container">
+            <canvas width="1200px" height="540px" id="gameScreen"></canvas>
+        </div>
+
+    </div>
+</div>
