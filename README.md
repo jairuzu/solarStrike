@@ -1,9 +1,14 @@
 # Solar Strike
 
 ## Overview
-Arcade style space shooter game built before completing the first 5 weeks of DevMountain. Self-taught on HTML5's canvas element, custom graphics, third-party audio integration, and collision detection algorithms.
+Solar Strike is an arcade style space shooter game which utilizes HTML5's canvas element, custom graphics, third-party music/sfx integration, and collision detection algorithms.
+
 ## Technologies
-* 
+* JavaScript
+* HTML5
+* AngularJS
+* Firebase
+* Custom CSS
 
 ## Main Screen
 
